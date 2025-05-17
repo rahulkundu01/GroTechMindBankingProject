@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="211.377" tests="5" skipped="0" failures="1" errors="0">
+<testcase classname="Validate Account Details functionality of Banking Domain" name="Validate Account Details functionality of GroTechMind Banking Domain - Example #1.1" time="48.897">
+<failure type="org.openqa.selenium.ElementClickInterceptedException" message="Element &lt;button class=&quot;_NpZMS wixui-button PlZyDq&quot;&gt; is not clickable at point (453,247) because another element &lt;div id=&quot;menuitem-1&quot; class=&quot;CEK3nk&quot;&gt; obscures it
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [2bb7e37b-5705-498e-b0e0-2269b229dffa, clickElement {id=98b51f05-8190-40aa-90c9-ec6371465c74}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.3, moz:accessibilityChecks: false, moz:buildID: 20250512124033, moz:debuggerAddress: 127.0.0.1:38670, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 30424, moz:profile: C:\Users\rahul\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:38670/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (2bb7e37b-5705-498e-b0e0-2269b229dffa)] -&gt; xpath: //button[contains(.,'Login')]]
+Session ID: 2bb7e37b-5705-498e-b0e0-2269b229dffa">
+<![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <button class="_NpZMS wixui-button PlZyDq"> is not clickable at point (453,247) because another element <div id="menuitem-1" class="CEK3nk"> obscures it
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [2bb7e37b-5705-498e-b0e0-2269b229dffa, clickElement {id=98b51f05-8190-40aa-90c9-ec6371465c74}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.3, moz:accessibilityChecks: false, moz:buildID: 20250512124033, moz:debuggerAddress: 127.0.0.1:38670, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 30424, moz:profile: C:\Users\rahul\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:38670/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (2bb7e37b-5705-498e-b0e0-2269b229dffa)] -> xpath: //button[contains(.,'Login')]]
+Session ID: 2bb7e37b-5705-498e-b0e0-2269b229dffa
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy37.click(Unknown Source)
+	at PageClass.AccountDetailsClass.clickOnLoginButton(AccountDetailsClass.java:83)
+	at StepDefinations.StepDefination.click_on_login(StepDefination.java:285)
+	at ✽.Click on Login(file:///C:/selenium_java/BankingProject2/src/test/java/FeatureFiles/AccountDetailsScenario.feature:7)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User open the URL of Banking application..............................passed
+And user clicks on Account Details button in WebPage........................passed
+And select and customer from the dropdown...................................passed
+And Click on Login..........................................................failed
+And click on deposit tab....................................................skipped
+And enter the amount to be deposited as "10000".............................skipped
+When click on Deposit button................................................skipped
+Then balance is updated.....................................................skipped
+And click on withdrawl tab..................................................skipped
+And enter amount to be withdrawn as "5000"..................................skipped
+When click on withdraw button...............................................skipped
+Then balance will be updated................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Validate Contact Us functionality of Banking Domain" name="Validate Contact Us functionality of GroTechMind Banking Domain - Example #1.1" time="50.957">
+<system-out><![CDATA[
+Given User open the URL of Banking application..............................passed
+And user clicks on ContactUs button in WebPage..............................passed
+And user enters name as "Harry".............................................passed
+And user enters email as "harry@gmail.com"..................................passed
+And user enters phone as "9811111112".......................................passed
+And user enters address as "park street"....................................passed
+And user enters country as "Kolkata"........................................passed
+And user enters zip as "13784"..............................................passed
+When user clicks on Submit button in ContactUs page.........................passed
+Then user will get a success message in ContactUs page......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate Forget Password functionality of Banking Domain" name="Validate Forget password functionality of GroTechMind Banking Domain - Example #1.1" time="37.837">
+<system-out><![CDATA[
+Given User open the URL of Banking application..............................passed
+And clicks on Forget Password button in Webpage.............................passed
+And user enters email in Forget Password page as "rktest@gmail.com".........passed
+And user enters phone number in Forget Password page as "8087282220"........passed
+When user click  on forget password button..................................passed
+Then user will get a success message in Forget Password page................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate Login functionality of Banking Domain" name="Validate Login functionality of GroTechMind Banking Domain - Example #1.1" time="31.47">
+<system-out><![CDATA[
+Given User open the URL of Banking application..............................passed
+And clicks on Log in button in Webpage......................................passed
+And user enters username as "rktest"........................................passed
+And user enters password as "test123".......................................passed
+When user click  on Login button............................................passed
+Then user will get a success message from the website.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate Signup functionality of Banking Domain" name="Validate Signup functionality of GroTechMind Banking Domain - Example #1.1" time="41.957">
+<system-out><![CDATA[
+Given User open the URL of Banking application..............................passed
+And user clicks on SignUp Button in WebPage.................................passed
+And user enters firstname as "Harry"........................................passed
+And user enters lastname as "Dsoza".........................................passed
+And user enters phone number as "9811111112"................................passed
+And user enters Date of Birth as "05-05-2007"...............................passed
+And user selects the gender.................................................passed
+And user enters city name as "Kolkata"......................................passed
+And user enters the user id as "13784"......................................passed
+And user enters the password as "test123"...................................passed
+When user clicks on Submit button...........................................passed
+Then user will get a success message from the site..........................passed
+]]></system-out>
+</testcase>
+</testsuite>
