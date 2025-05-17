@@ -11,6 +11,8 @@ import io.cucumber.junit.CucumberOptions;
 glue={"StepDefinations"},
 //tags = "@High",
 plugin = { "pretty", "html:target/site/cucumber-pretty.html",
+		"json:target/site/cucumber-report.json",
+		 "junit:target/site/cucumber-results.xml",
 "json:target/cucumber.json", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" })
 
 public class TestRun {
