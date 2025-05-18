@@ -138,23 +138,27 @@ public class StepDefination extends BaseClass {
 	@Given("clicks on Log in button in Webpage")
 	public void clicks_on_log_in_button_in_webpage() {
 		lc1.clickOnLogIn();
+		log.info("Clicked on Login Menu");
 	    
 	}
 
 	@Given("user enters username as {string}")
 	public void user_enters_username_as(String username) {
 		lc1.enterUserName(username);
+		log.info("Entered Username");
 	}
 
 	@Given("user enters password as {string}")
 	public void user_enters_password_as(String password) {
 		lc1.enterPassword(password);
+		log.info("Entered Password");
 	    
 	}
 
 	@When("user click  on Login button")
 	public void user_click_on_login_button() {
 		lc1.clickOnLoginButton();
+		log.info("Clicked on Login Button");
 	    
 	}
 
@@ -177,22 +181,26 @@ public class StepDefination extends BaseClass {
 	@Given("clicks on Forget Password button in Webpage")
 	public void clicks_on_forget_password_button_in_webpage() {
 		fp1.clickOnForgetPassword(); 
+		log.info("Clicked on Forget Password Menu");
 	}
 
 	@Given("user enters email in Forget Password page as {string}")
 	public void user_enters_email_in_forget_password_page_as(String fp_email) {
 	    fp1.enterEmailAddress(fp_email);
+	    log.info("Entered Email Address");
 	}
 
 	@Given("user enters phone number in Forget Password page as {string}")
 	public void user_enters_phone_number_in_forget_password_page_as(String fp_phone) {
 	   fp1.enterPhoneNumber(fp_phone);
+	   log.info("Entred Phone number");
 	}
 
 	@When("user click  on forget password button")
 	public void user_click_on_forget_password_button() {
 		
 		fp1.clickOnForgetPasswordButton();
+		log.info("Clicked on Forget Password button");
 	    
 	}
 
@@ -215,43 +223,51 @@ public class StepDefination extends BaseClass {
 	@Given("user clicks on ContactUs button in WebPage")
 	public void user_clicks_on_contact_us_button_in_web_page() {
 	    cu1.clickOnContactUs();
+	    log.info("Clicked on Contact Us menu");
 	}
 
 	@Given("user enters name as {string}")
 	public void user_enters_name_as(String contact_name) {
 		cu1.enterContactName(contact_name);
+		log.info("Entered Contact name");
 	    
 	}
 
 	@Given("user enters email as {string}")
 	public void user_enters_email_as(String contact_email) {
 	   cu1.enterEmailAddress(contact_email);
+	   log.info("Entered email address");
 	}
 
 	@Given("user enters phone as {string}")
 	public void user_enters_phone_as(String contact_phone) {
 	   scrollDown();
 	   cu1.enterPhoneNumber(contact_phone);
+	   log.info("Entered Phone Number");
 	}
 
 	@Given("user enters address as {string}")
 	public void user_enters_address_as(String contact_address) {
 	    cu1.enterContactAddress(contact_address);
+	    log.info("Entered Address");
 	}
 
 	@Given("user enters country as {string}")
 	public void user_enters_country_as(String contact_country) {
 	    cu1.enterContactCountrye(contact_country);
+	    log.info("Entered Country");
 	}
 
 	@Given("user enters zip as {string}")
 	public void user_enters_zip_as(String contact_zip) {
 	    cu1.enterContactZip(contact_zip);
+	    log.info("Entered zip code");
 	}
 
 	@When("user clicks on Submit button in ContactUs page")
 	public void user_clicks_on_submit_button_in_contact_us_page() {
 	    cu1.clickOnSumbitButton();
+	    log.info("Clicked on submit button");
 	}
 
 	@Then("user will get a success message in ContactUs page")
@@ -273,31 +289,38 @@ public class StepDefination extends BaseClass {
 	    windowHandle(1);
 	    addHardcodedWait();
 	    System.out.println(driver.getCurrentUrl());
+	    log.info("Clicked on Account details menu");
 	}
 
 	@Given("select and customer from the dropdown")
 	public void select_and_customer_from_the_dropdown() throws AWTException {
 	    ad1.selectName();
+	    log.info("Select the sname");
 	}
 
 	@Given("Click on Login")
 	public void click_on_login() {
 	   ad1.clickOnLoginButton();
+	   log.info("Click on login");
 	}
 
 	@Given("click on deposit tab")
 	public void click_on_deposit_tab() {
 	   ad1.clickOnDepositTab();
+	   log.info("Clicked on deposit tab");
 	}
 
 	@Given("enter the amount to be deposited as {string}")
 	public void enter_the_amount_to_be_deposited_as(String d_amount) {
 	   ad1.enterDepositAmount(d_amount);
+	   log.info("Entered deposit amount");
+	   
 	}
 
 	@When("click on Deposit button")
 	public void click_on_deposit_button() {
 		ad1.clickOnDepositButton();
+		log.info("Clicked on deposit button");
 	   
 	}
 
@@ -315,16 +338,19 @@ public class StepDefination extends BaseClass {
 	@Then("click on withdrawl tab")
 	public void click_on_withdrawl_tab() {
 	  ad1.clickOnWithdrawTab();
+	  log.info("Clicked on withdrawl tab");
 	}
 
 	@Then("enter amount to be withdrawn as {string}")
 	public void enter_amount_to_be_withdrawn_as(String w_amount) {
 	    ad1.enterWithdrawAmount(w_amount);
+	    log.info("Entered amount to withdraw");
 	}
 
 	@When("click on withdraw button")
 	public void click_on_withdraw_button() {
 	    ad1.clickOnWithdrawButton();
+	    log.info("Clicked on withdraw button");
 	}
 
 	@Then("balance will be updated")
@@ -345,6 +371,7 @@ public class StepDefination extends BaseClass {
 	//--------------------------------Tear Down -----------------------------------------//
 	@After //after hook
 	public void tearDown() throws InterruptedException {
+		log.info("Test completed");
 		closeBrowser();
 		
 	}
