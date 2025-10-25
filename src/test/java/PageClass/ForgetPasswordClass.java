@@ -28,7 +28,7 @@ public class ForgetPasswordClass extends BaseClass {
 	@FindBy (xpath = "//button[@class='t-submit']")
 	WebElement fbBtnForgetPassword;
 	
-	@FindBy(xpath="//div[@class='js-successbox t-form__successbox t-text t-text_md']")
+	@FindBy(xpath="//div[@id='tildaformsuccesspopuptitle-new']")
 	WebElement fptextMessage;
 	
 	public void clickOnForgetPassword()

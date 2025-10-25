@@ -40,7 +40,7 @@ public class ContactUsClass extends BaseClass {
 	@FindBy(xpath="//button[@class='t-submit']")
 	WebElement contactBtnSubmit;
 	
-	@FindBy(xpath="//div[@class='js-successbox t-form__successbox t-text t-text_md']")
+	@FindBy(xpath="//div[@id='tildaformsuccesspopuptitle-new']")
 	WebElement contactSuccessMessage;
 	
 	public void clickOnContactUs() {

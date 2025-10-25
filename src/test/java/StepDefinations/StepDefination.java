@@ -25,7 +25,7 @@ import io.cucumber.java.en.When;
 public class StepDefination extends BaseClass {
 	WebDriver driver; 
 	SignupClass sc1;
-	String actualMessage = "Thank you! Your data has been submitted.";
+	String actualMessage = "Thank you!";
 	String actualBalance1 = "₹10000";
 	String actualBalance2 = "₹5000";
 	LoginClass lc1;
@@ -165,7 +165,7 @@ public class StepDefination extends BaseClass {
 	@Then("user will get a success message from the website")
 	public void user_will_get_a_success_message_from_the_website() throws InterruptedException, IOException {
 		
-		   addExplicitWait(By.xpath("//div[@class='js-successbox t-form__successbox t-text t-text_md']"));
+		   addExplicitWait(By.xpath("//div[@id='tildaformsuccesspopuptitle-new']"));
 		   String lmessage = lc1.verifyLoginMessage();
 		   Assert.assertEquals(actualMessage, lmessage);
 		   log.info("TC2: Verified if the success message is visible or not.");

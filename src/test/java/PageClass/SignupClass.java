@@ -48,7 +48,7 @@ public class SignupClass extends BaseClass {
 	@FindBy(xpath = "//button[@type='submit']")
 	WebElement btnSubmit;
 	
-	@FindBy(xpath="//div[@class='js-successbox t-form__successbox t-text t-text_md']")
+	@FindBy(xpath="//div[@id='tildaformsuccesspopuptitle-new']")
 	WebElement textMessage;
 	
 	public void clickOnSignUp()
