@@ -31,7 +31,7 @@ public class AccountDetailsClass extends BaseClass {
 	@FindBy(xpath="//button[contains(.,'Login')]")
 	WebElement clickOnLogin;
 	
-	@FindBy(xpath="(//span[@class='TabsList2027980309__label'])[2]")
+	@FindBy(xpath="//span[text()='Deposit']/parent::div[not(contains(@class,'hidden'))]")
 	WebElement clickDeposit;
 	
 	@FindBy(xpath="(//span[@class='TabsList2027980309__label'])[3]")

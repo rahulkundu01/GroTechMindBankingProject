@@ -127,7 +127,7 @@ public class StepDefination extends BaseClass {
 	@Then("user will get a success message from the site")
 	public void user_will_get_a_success_message_from_the_site() throws InterruptedException, IOException {
 		
-	   addExplicitWait(By.xpath("//div[@class='js-successbox t-form__successbox t-text t-text_md']"));
+	   addExplicitWait(By.xpath("//div[@id='tildaformsuccesspopuptitle-new']"));
 	   String sumessage = sc1.verifyMessage();
 	   Assert.assertEquals(actualMessage, sumessage);
 	   log.info("TC1: step11_Verified if the success message is visible or not.");
@@ -207,7 +207,7 @@ public class StepDefination extends BaseClass {
 	@Then("user will get a success message in Forget Password page")
 	public void user_will_get_a_success_message_in_forget_password_page() throws IOException {
 		
-		   addExplicitWait(By.xpath("//div[@class='js-successbox t-form__successbox t-text t-text_md']"));
+		   addExplicitWait(By.xpath("//div[@id='tildaformsuccesspopuptitle-new']"));
 		   String fpmessage = fp1.verifyForgetPasswordMessage();
 		   Assert.assertEquals(actualMessage, fpmessage);
 		   log.info("TC3: Verified if the success message is visible or not.");
@@ -273,7 +273,7 @@ public class StepDefination extends BaseClass {
 	@Then("user will get a success message in ContactUs page")
 	public void user_will_get_a_success_message_in_contact_us_page() throws IOException {
 		
-		   addExplicitWait(By.xpath("//div[@class='js-successbox t-form__successbox t-text t-text_md']"));
+		   addExplicitWait(By.xpath("//div[@id='tildaformsuccesspopuptitle-new']"));
 		   String cumessage = cu1.verifyContactSuccessMessage();
 		   Assert.assertEquals(actualMessage, cumessage);
 		   log.info("TC4: Verified if the success message is visible or not.");
